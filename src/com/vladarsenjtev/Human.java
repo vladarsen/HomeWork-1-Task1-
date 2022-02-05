@@ -60,12 +60,12 @@ public class Human {
     public List<String> getShortName() {
         List<String> fullName = new ArrayList<>();
         if (patronymic == null) {
-            fullName.add(this.name);
-            fullName.add(this.surname.charAt(0) + ".");
+            fullName.add(name);
+            fullName.add(surname.charAt(0) + ".");
         } else {
-            fullName.add(this.name);
-            fullName.add(this.surname.charAt(0) + ".");
-            fullName.add(this.patronymic.charAt(0) + ".");
+            fullName.add(name);
+            fullName.add(surname.charAt(0) + ".");
+            fullName.add(patronymic.charAt(0) + ".");
         }
         return fullName;
     }
